@@ -1,0 +1,14 @@
+results = {
+    "Ivan": 12.4,
+    "Petro" : 15.1,
+    "Oleh" : 18.3,
+    "Dmytro" : 14.0,
+    "Andriy" : 19.5
+}
+
+avg = sum(results.values()) / len(results)
+
+above_avg = [name for name, value in results.items() if value > avg]
+
+print("Середнє значення:", avg)
+print("Учасники вище середнього:", above_avg)
