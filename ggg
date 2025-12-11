@@ -1,0 +1,12 @@
+import re
+
+text = "Short and long words in one sentence."
+
+# Видаляємо пунктуацію та ділимо на слова
+words = re.findall(r"[A-Za-z]+", text)
+
+short_words = [w for w in words if len(w) <= 3]
+long_words = [w for w in words if len(w) >= 5]
+
+print("Короткі слова:", short_words)
+print("Довгі слова:", long_words)
